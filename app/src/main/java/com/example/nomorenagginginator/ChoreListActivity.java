@@ -17,42 +17,41 @@ import java.util.ArrayList;
 public class ChoreListActivity extends ListActivity {
 
 	boolean isDeleting = false;
-	ContactAdapter adapter;
+	ChoreAdapter adapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.child_list);
+		setContentView(R.layout.chore_list);
 
 		initListButton();
 		initMapButton();
 		initSettingsButton();
 		initDeleteButton();
-		initAddContactButton();
-
+		initAddChoreButton();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.contact_list, menu);
+		getMenuInflater().inflate(R.menu.chore_list, menu);
 		return true;
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		String sortBy = getSharedPreferences("MyContactListPreferences", Context.MODE_PRIVATE).getString("sortfield", "contactname");
+		String sortBy = getSharedPreferences("MyContactListPreferences", Context.MODE_PRIVATE).getString("sortfield", "chore");
 		String sortOrder = getSharedPreferences("MyContactListPreferences", Context.MODE_PRIVATE).getString("sortorder", "ASC");
 
-		ContactDataSource ds = new ContactDataSource(this);
+		ChoreDataSource ds = new ChoreDataSource(this);
 		ds.open();
-		final ArrayList<Contact> contacts = ds.getContacts(sortBy, sortOrder);
+		final ArrayList<Chores> chores = ds.getChores(sortBy, sortOrder);
 		ds.close();
 
-		if (contacts.size() > 0) {
+		if (chores.size() > 0) {
 
-			adapter = new ContactAdapter(this, contacts);
+			adapter = new ChoreAdapter(this, chores);
 			setListAdapter(adapter);
 			ListView listView = getListView();
 			listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -60,13 +59,13 @@ public class ChoreListActivity extends ListActivity {
 				@Override
 				public void onItemClick(AdapterView<?> parent, View itemClicked,
 						int position, long id) {
-					Contact selectedContact = contacts.get(position);
+					Chores selectedChores = chores.get(position);
 					if (isDeleting) {
-						adapter.showDelete(position, itemClicked, ChoreListActivity.this, selectedContact);
+						adapter.showDelete(position, itemClicked, ChoreListActivity.this, selectedChores);
 					}
 					else {
 						Intent intent = new Intent(ChoreListActivity.this, ChildActivity.class);
-						intent.putExtra("contactid", selectedContact.getContactID());
+						intent.putExtra("choreId", selectedChores.getChoreID());
 						startActivity(intent);
 					}
 				}
@@ -78,14 +77,14 @@ public class ChoreListActivity extends ListActivity {
 		}
 	}
 
-	private void initAddContactButton() {
-		Button newContact = (Button) findViewById(R.id.buttonAdd);
-		newContact.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-    			Intent intent = new Intent(ChoreListActivity.this, ChildActivity.class);
-    			startActivity(intent);
-            }
-        });
+	private void initAddChoreButton() {
+		Button newChore = (Button) findViewById(R.id.buttonAdd);
+		newChore.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	private void initDeleteButton() {
