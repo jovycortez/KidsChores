@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class ContactDBHelper extends SQLiteOpenHelper {
 	
-  private static final String DATABASE_NAME = "mom.db";
+  private static final String DATABASE_NAME = "KidsChores.db";
   private static final int DATABASE_VERSION = 1;
 
   // Database creation sql statement
