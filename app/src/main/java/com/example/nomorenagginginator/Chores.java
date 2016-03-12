@@ -8,13 +8,13 @@ public class Chores {
 
 	private String frequency;
 
-	private Time duration;
+	private Time birthday;
 
 	public Chores() {
 		choreID = -1;
 		Time t = new Time();
 		t.setToNow();
-		duration = t;
+		birthday = t;
 	}
 
 	public int getChoreID() {
@@ -29,11 +29,11 @@ public class Chores {
 	public void setChore(String s) {
 		chore = s;
 	}
-	public Time getDuration() {
-		return duration;
+	public Time getBirthday() {
+		return birthday;
 	}
-	public void setDuration(Time t) {
-		duration = t;
+	public void setBirthday(Time t) {
+		birthday = t;
 	}
 
 	public void setFrequency(String s) {
