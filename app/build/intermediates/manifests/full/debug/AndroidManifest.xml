@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.nomorenagginginator.ContactActivity"
+            android:name="com.example.nomorenagginginator.ChildActivity"
             android:label="@string/app_name" >
         </activity>
         <activity

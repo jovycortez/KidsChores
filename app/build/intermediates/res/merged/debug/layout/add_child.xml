@@ -2,13 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactActivity" >
+    tools:context=".ChildActivity" >
     
                 <LinearLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:layout_width="0px"
-            android:layout_height="0px" />
+            android:layout_height="0px"
+                    android:id="@+id/linearLayout2" />
 
     
 
@@ -85,7 +86,7 @@
 
 
             <EditText
-                android:id="@+id/editName"
+                android:id="@+id/txtChore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -97,75 +98,64 @@
 
             </EditText>
 
-            <EditText
-                android:id="@+id/editHome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-               android:imeOptions="actionNext"
-                android:maxLength="14"
-                android:ems="7"
-                android:nextFocusDown="@+id/editCell"
-                android:inputType="textCapWords"
-                android:layout_below="@+id/editName">
 
-            </EditText>
-
-            <EditText
-                android:id="@+id/editCell"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@+id/editHome"
-                android:layout_alignBottom="@+id/editHome"
-                android:maxLength="14"
-                android:ems="7"
-                android:imeOptions="actionNext"
-                android:nextFocusDown="@+id/editEMail"
-                android:inputType="textCapWords"
-               android:layout_alignParentStart="true"
-               android:hint="Phone">
-
-            </EditText>
-
-            <TextView
-                android:id="@+id/textBday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-               android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:paddingBottom="25dp"
-                android:text="Birthday:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_below="@+id/editHome" />
-
-           <TextView
-                android:id="@+id/textBirthday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/textBday"
-                android:layout_alignBottom="@+id/textBday"
-                android:layout_marginLeft="10dp"
-                android:paddingBottom="25dp"
-                android:text="01/01/1970"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-           <Button
-               android:id="@+id/btnBirthday"
-               style="?android:attr/buttonStyleSmall"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentRight="true"
-               android:layout_marginRight="10dp"
-               android:layout_alignBaseline="@+id/textBirthday"
-               android:text="Change" />
-           
-           
-           
         </RelativeLayout>
     </ScrollView>
+
+    <EditText
+        android:id="@+id/editCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="14"
+        android:ems="7"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/editEMail"
+        android:inputType="textCapWords"
+        android:hint="Phone"
+        android:layout_marginTop="43dp"
+        android:layout_alignTop="@+id/scrollView1"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:layout_toLeftOf="@+id/btnBirthday"
+        android:layout_toStartOf="@+id/btnBirthday">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:text="Birthday:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/editCell"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:layout_toEndOf="@+id/linearLayout2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/textBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:paddingBottom="25dp"
+        android:text="01/01/1970"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBaseline="@+id/lblDuration"
+        android:layout_alignBottom="@+id/lblDuration"
+        android:layout_toRightOf="@+id/lblDuration"
+        android:layout_toEndOf="@+id/lblDuration"
+        android:layout_marginStart="56dp" />
+
+    <Button
+       android:id="@+id/btnBirthday"
+       style="?android:attr/buttonStyleSmall"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_alignBottom="@+id/textBirthday"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

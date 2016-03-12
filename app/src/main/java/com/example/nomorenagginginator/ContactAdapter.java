@@ -17,7 +17,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
     private Context adapterContext;
 
     public ContactAdapter(Context context, ArrayList<Contact> items) {
-            super(context, R.layout.list_item, items);
+            super(context, R.layout.child_list_item, items);
             adapterContext = context;
             this.items = items;
     }
@@ -30,7 +30,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
             
             if (v == null) {
             		LayoutInflater vi = (LayoutInflater) adapterContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            		v = vi.inflate(R.layout.list_item, null);
+            		v = vi.inflate(R.layout.child_list_item, null);
             }
 
             TextView contactName = (TextView) v.findViewById(R.id.textContactName);

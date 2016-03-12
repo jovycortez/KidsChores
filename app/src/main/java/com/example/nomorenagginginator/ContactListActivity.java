@@ -65,7 +65,7 @@ public class ContactListActivity extends ListActivity {
 						adapter.showDelete(position, itemClicked, ContactListActivity.this, selectedContact);
 					}
 					else {
-						Intent intent = new Intent(ContactListActivity.this, ContactActivity.class);
+						Intent intent = new Intent(ContactListActivity.this, ChildActivity.class);
 						intent.putExtra("contactid", selectedContact.getContactID());
 						startActivity(intent);
 					}
@@ -73,7 +73,7 @@ public class ContactListActivity extends ListActivity {
 			});
 		}
 		else {
-			Intent intent = new Intent(ContactListActivity.this, ContactActivity.class);
+			Intent intent = new Intent(ContactListActivity.this, ChildActivity.class);
 			startActivity(intent);
 		}
 	}
@@ -82,7 +82,7 @@ public class ContactListActivity extends ListActivity {
 		Button newContact = (Button) findViewById(R.id.buttonAdd);
 		newContact.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ContactListActivity.this, ContactActivity.class);
+    			Intent intent = new Intent(ContactListActivity.this, ChildActivity.class);
     			startActivity(intent);
             }
         });

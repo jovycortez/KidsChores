@@ -9,7 +9,7 @@
             android:focusableInTouchMode="true"
             android:layout_width="0px"
             android:layout_height="0px"
-                    android:id="@+id/linearLayout2" />
+                    android:id="@+id/linearLayout" />
 
     
 
@@ -94,7 +94,27 @@
                 android:ems="14"
                 android:imeOptions="actionNext"
                 android:inputType="textCapWords"
-                android:hint="Name">
+                android:hint="Chore"
+                android:layout_alignRight="@+id/txtFrequency"
+                android:layout_alignEnd="@+id/txtFrequency">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:maxLength="14"
+                android:ems="7"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/editEMail"
+                android:inputType="textCapWords"
+               android:layout_alignParentStart="true"
+               android:hint="Daily, weekly or Monthly"
+                android:layout_below="@id/txtChore"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
 
             </EditText>
 
@@ -102,42 +122,25 @@
         </RelativeLayout>
     </ScrollView>
 
-    <EditText
-        android:id="@+id/editCell"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxLength="14"
-        android:ems="7"
-        android:imeOptions="actionNext"
-        android:nextFocusDown="@+id/editEMail"
-        android:inputType="textCapWords"
-        android:hint="Phone"
-        android:layout_marginTop="43dp"
-        android:layout_alignTop="@+id/scrollView1"
-        android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_toLeftOf="@+id/btnBirthday"
-        android:layout_toStartOf="@+id/btnBirthday">
-
-    </EditText>
-
     <TextView
         android:id="@+id/lblDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
         android:paddingBottom="25dp"
-        android:text="Birthday:"
+        android:text="Duration"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_below="@+id/editCell"
-        android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_toEndOf="@+id/linearLayout2"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp" />
+        android:layout_alignTop="@+id/scrollView1"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
 
     <TextView
         android:id="@+id/textBirthday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="47dp"
         android:paddingBottom="25dp"
         android:text="01/01/1970"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -145,7 +148,7 @@
         android:layout_alignBottom="@+id/lblDuration"
         android:layout_toRightOf="@+id/lblDuration"
         android:layout_toEndOf="@+id/lblDuration"
-        android:layout_marginStart="56dp" />
+        android:layout_marginStart="47dp" />
 
     <Button
        android:id="@+id/btnBirthday"
@@ -155,7 +158,9 @@
         android:text="Change"
         android:layout_alignBottom="@+id/textBirthday"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
 
 
 </RelativeLayout>

@@ -51,12 +51,12 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:22:27-74
-activity#com.example.nomorenagginginator.ContactActivity
+activity#com.example.nomorenagginginator.ChildActivity
 ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:25:9-28:20
 	android:label
 		ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:26:13-75
+		ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:26:13-42
 activity#com.example.nomorenagginginator.ContactMapActivity
 ADDED from C:\Users\Jovy\Documents\GitHub\KidsChores\app\src\main\AndroidManifest.xml:29:9-32:20
 	android:label

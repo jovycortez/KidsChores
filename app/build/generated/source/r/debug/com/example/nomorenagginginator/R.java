@@ -29,23 +29,24 @@ public final class R {
         public static final int settingsicon=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f090022;
-        public static final int birthdayPicker=0x7f09001b;
-        public static final int btnBirthday=0x7f090017;
-        public static final int btnCancel=0x7f09001d;
-        public static final int btnOk=0x7f09001e;
-        public static final int buttonAdd=0x7f090019;
-        public static final int buttonDelete=0x7f090018;
-        public static final int buttonDeleteContact=0x7f090021;
-        public static final int buttonSave=0x7f09000f;
-        public static final int dateSeletLayout=0x7f09001a;
+        public static final int action_settings=0x7f090024;
+        public static final int birthdayPicker=0x7f090020;
+        public static final int btnBirthday=0x7f090015;
+        public static final int btnCancel=0x7f090022;
+        public static final int btnOk=0x7f090023;
+        public static final int buttonAdd=0x7f09001b;
+        public static final int buttonDelete=0x7f09001a;
+        public static final int buttonDeleteContact=0x7f09001e;
+        public static final int buttonSave=0x7f090010;
+        public static final int dateSeletLayout=0x7f09001f;
         public static final int editCell=0x7f090013;
         public static final int editEMail=0x7f090014;
-        public static final int editHome=0x7f090012;
-        public static final int editName=0x7f090011;
         public static final int imageButtonList=0x7f090001;
         public static final int imageButtonMap=0x7f090002;
         public static final int imageButtonSettings=0x7f090003;
+        public static final int lblDuration=0x7f090016;
+        public static final int linearLayout=0x7f090018;
+        public static final int linearLayout2=0x7f09000d;
         public static final int navbar=0x7f090000;
         public static final int radioAscending=0x7f09000b;
         public static final int radioBirthday=0x7f090008;
@@ -54,24 +55,28 @@ public final class R {
         public static final int radioGroup1=0x7f090005;
         public static final int radioGroup2=0x7f09000a;
         public static final int radioName=0x7f090006;
-        public static final int scrollView1=0x7f090010;
-        public static final int tableRow1=0x7f09001c;
-        public static final int textBday=0x7f090015;
-        public static final int textBirthday=0x7f090016;
-        public static final int textContactName=0x7f09001f;
-        public static final int textPhoneNumber=0x7f090020;
+        public static final int scrollView1=0x7f090011;
+        public static final int tableRow1=0x7f090021;
+        public static final int textBirthday=0x7f090017;
+        public static final int textContactName=0x7f09001c;
+        public static final int textPhoneNumber=0x7f09001d;
         public static final int textView1=0x7f090004;
         public static final int textView2=0x7f090009;
-        public static final int toggleButtonEdit=0x7f09000e;
-        public static final int toolbar=0x7f09000d;
+        public static final int toggleButtonEdit=0x7f09000f;
+        public static final int toolbar=0x7f09000e;
+        public static final int txtChore=0x7f090012;
+        public static final int txtFrequency=0x7f090019;
     }
     public static final class layout {
         public static final int activity_contact_map=0x7f030000;
         public static final int activity_contact_settings=0x7f030001;
         public static final int add_child=0x7f030002;
-        public static final int child_list=0x7f030003;
-        public static final int dateselect=0x7f030004;
-        public static final int list_item=0x7f030005;
+        public static final int add_chore=0x7f030003;
+        public static final int child_list=0x7f030004;
+        public static final int child_list_item=0x7f030005;
+        public static final int chore_list=0x7f030006;
+        public static final int chore_list_item=0x7f030007;
+        public static final int dateselect=0x7f030008;
     }
     public static final class menu {
         public static final int contact=0x7f080000;
@@ -82,10 +87,11 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f070000;
         public static final int app_name=0x7f070001;
-        public static final int hello_world=0x7f070002;
-        public static final int title_activity_contact_list=0x7f070003;
-        public static final int title_activity_contact_map=0x7f070004;
-        public static final int title_activity_contact_settings=0x7f070005;
+        public static final int chore_name=0x7f070002;
+        public static final int hello_world=0x7f070003;
+        public static final int title_activity_contact_list=0x7f070004;
+        public static final int title_activity_contact_map=0x7f070005;
+        public static final int title_activity_contact_settings=0x7f070006;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

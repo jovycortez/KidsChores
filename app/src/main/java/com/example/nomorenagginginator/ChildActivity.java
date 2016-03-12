@@ -23,7 +23,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class ContactActivity extends FragmentActivity implements SaveDateListener {
+public class ChildActivity extends FragmentActivity implements SaveDateListener {
 	
 	private Contact currentContact;
 	
@@ -64,7 +64,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ContactActivity.this, ContactListActivity.class);
+    			Intent intent = new Intent(ChildActivity.this, ContactListActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }
@@ -75,7 +75,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ContactActivity.this, ContactMapActivity.class);
+    			Intent intent = new Intent(ChildActivity.this, ContactMapActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }
@@ -85,7 +85,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonSettings);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ContactActivity.this, ContactSettingsActivity.class);
+    			Intent intent = new Intent(ChildActivity.this, ContactSettingsActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }
@@ -111,7 +111,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 			@Override
 			public void onClick(View v) {
 				hideKeyboard();
-				ContactDataSource ds = new ContactDataSource(ContactActivity.this);
+				ContactDataSource ds = new ContactDataSource(ChildActivity.this);
 				ds.open();
 				
 				boolean wasSuccessful = false;
@@ -135,7 +135,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 	}
 
 	private void initTextChangedEvents(){
-		final EditText contactName = (EditText) findViewById(R.id.editName);
+		final EditText contactName = (EditText) findViewById(R.id.txtChore);
 		contactName.addTextChangedListener(new TextWatcher() {
 			public void afterTextChanged(Editable s) {
 				currentContact.setContactName(contactName.getText().toString());
@@ -185,7 +185,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 	}
 	
 	private void setForEditing(boolean enabled) {
-		EditText editName = (EditText) findViewById(R.id.editName);
+		EditText editName = (EditText) findViewById(R.id.txtChore);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
 		Button buttonChange = (Button) findViewById(R.id.btnBirthday);
 
@@ -222,7 +222,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 
 	private void hideKeyboard() {
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-		EditText editName = (EditText) findViewById(R.id.editName);
+		EditText editName = (EditText) findViewById(R.id.txtChore);
 		imm.hideSoftInputFromWindow(editName.getWindowToken(), 0);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
 		imm.hideSoftInputFromWindow(editCell.getWindowToken(), 0);
@@ -232,13 +232,13 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 
 	private void initContact(int id) {
 
-		ContactDataSource ds = new ContactDataSource(ContactActivity.this);
+		ContactDataSource ds = new ContactDataSource(ChildActivity.this);
 
 		ds.open();
 		currentContact = ds.getSpecificContact(id);
 		ds.close();
 		
-		EditText editName = (EditText) findViewById(R.id.editName);
+		EditText editName = (EditText) findViewById(R.id.txtChore);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
 		TextView birthDay = (TextView) findViewById(R.id.textBirthday);
 		

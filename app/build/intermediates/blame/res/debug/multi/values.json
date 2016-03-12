@@ -1,299 +1,5 @@
 [
     {
-        "outputFile": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 51,
-                    "endOffset": 102
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\color.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 51,
-                        "endOffset": 102
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 107,
-                    "endColumn": 45,
-                    "endOffset": 148
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\color.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 252,
-                        "endColumn": 45,
-                        "endOffset": 293
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 153,
-                    "endColumn": 44,
-                    "endOffset": 193
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\color.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 160,
-                        "endColumn": 44,
-                        "endOffset": 200
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 198,
-                    "endColumn": 46,
-                    "endOffset": 240
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\color.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 46,
-                        "endOffset": 247
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 245,
-                    "endColumn": 52,
-                    "endOffset": 293
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\color.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 107,
-                        "endColumn": 52,
-                        "endOffset": 155
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 298,
-                    "endColumn": 57,
-                    "endOffset": 351
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 89,
-                        "endColumn": 57,
-                        "endOffset": 142
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 356,
-                    "endColumn": 55,
-                    "endOffset": 407
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 147,
-                        "endColumn": 55,
-                        "endOffset": 198
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 412,
-                    "endColumn": 52,
-                    "endOffset": 460
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 107,
-                        "endColumn": 52,
-                        "endOffset": 155
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 465,
-                    "endColumn": 50,
-                    "endOffset": 511
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 50,
-                        "endOffset": 102
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 516,
-                    "endColumn": 52,
-                    "endOffset": 564
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 160,
-                        "endColumn": 52,
-                        "endOffset": 208
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 569,
-                    "endColumn": 68,
-                    "endOffset": 633
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 213,
-                        "endColumn": 68,
-                        "endOffset": 277
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 638,
-                    "endColumn": 67,
-                    "endOffset": 701
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 282,
-                        "endColumn": 67,
-                        "endOffset": 345
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 706,
-                    "endColumn": 68,
-                    "endOffset": 770
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 350,
-                        "endColumn": 68,
-                        "endOffset": 414
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 775,
-                    "endLine": 21,
-                    "endColumn": 12,
-                    "endOffset": 1061
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 186,
-                        "endLine": 12,
-                        "endColumn": 12,
-                        "endOffset": 472
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 1066,
-                    "endLine": 24,
-                    "endColumn": 12,
-                    "endOffset": 1221
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 510,
-                        "endLine": 17,
-                        "endColumn": 12,
-                        "endOffset": 665
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
@@ -440,11 +146,11 @@
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 107,
+                        "startOffset": 156,
                         "endColumn": 52,
-                        "endOffset": 155
+                        "endOffset": 204
                     }
                 }
             },
@@ -453,17 +159,17 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 465,
-                    "endColumn": 50,
-                    "endOffset": 511
+                    "endColumn": 48,
+                    "endOffset": 509
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 50,
-                        "endOffset": 102
+                        "startOffset": 59,
+                        "endColumn": 48,
+                        "endOffset": 103
                     }
                 }
             },
@@ -471,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 516,
-                    "endColumn": 52,
-                    "endOffset": 564
+                    "startOffset": 514,
+                    "endColumn": 45,
+                    "endOffset": 555
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 160,
-                        "endColumn": 52,
-                        "endOffset": 208
+                        "startOffset": 109,
+                        "endColumn": 45,
+                        "endOffset": 150
                     }
                 }
             },
@@ -490,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 569,
-                    "endColumn": 68,
-                    "endOffset": 633
+                    "startOffset": 560,
+                    "endColumn": 52,
+                    "endOffset": 608
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 213,
-                        "endColumn": 68,
-                        "endOffset": 277
+                        "startOffset": 210,
+                        "endColumn": 52,
+                        "endOffset": 258
                     }
                 }
             },
@@ -509,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 638,
-                    "endColumn": 67,
-                    "endOffset": 701
+                    "startOffset": 613,
+                    "endColumn": 68,
+                    "endOffset": 677
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 282,
-                        "endColumn": 67,
-                        "endOffset": 345
+                        "startOffset": 264,
+                        "endColumn": 68,
+                        "endOffset": 328
                     }
                 }
             },
@@ -528,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 706,
-                    "endColumn": 68,
-                    "endOffset": 770
+                    "startOffset": 682,
+                    "endColumn": 67,
+                    "endOffset": 745
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 350,
-                        "endColumn": 68,
-                        "endOffset": 414
+                        "startOffset": 334,
+                        "endColumn": 67,
+                        "endOffset": 397
                     }
                 }
             },
@@ -547,10 +253,29 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 775,
-                    "endLine": 21,
+                    "startOffset": 750,
+                    "endColumn": 68,
+                    "endOffset": 814
+                },
+                "from": {
+                    "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 403,
+                        "endColumn": 68,
+                        "endOffset": 467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 819,
+                    "endLine": 22,
                     "endColumn": 12,
-                    "endOffset": 1061
+                    "endOffset": 1105
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\styles.xml",
@@ -566,12 +291,12 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1066,
-                    "endLine": 24,
+                    "startOffset": 1110,
+                    "endLine": 25,
                     "endColumn": 12,
-                    "endOffset": 1221
+                    "endOffset": 1265
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\styles.xml",
