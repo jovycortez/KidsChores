@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\appicon.png",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\drawable-hdpi\\appicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\photoiconsmall.png",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\drawable-hdpi\\photoiconsmall.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\photoiconsmall.png",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\drawable-hdpi\\photoiconsmall.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\appicon.png",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\drawable-hdpi\\appicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\settingsicon.png",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\drawable-hdpi\\settingsicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mapicon.png",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\drawable-hdpi\\mapicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contactlisticon.png",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\drawable-hdpi\\contactlisticon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contactlisticon.png",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\drawable-hdpi\\contactlisticon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mapicon.png",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\drawable-hdpi\\mapicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\settingsicon.png",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\drawable-hdpi\\settingsicon.png"
+    }
+]

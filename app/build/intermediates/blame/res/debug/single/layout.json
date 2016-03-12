@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dateselect.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\dateselect.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_child.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\add_child.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_child.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\add_child.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_map.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\activity_contact_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_settings.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\activity_contact_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_settings.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\activity_contact_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\child_list.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\child_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\layout\\child_list.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\layout\\child_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_map.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\activity_contact_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dateselect.xml",
+        "source": "C:\\Users\\Jovy\\StudioProjects\\HW4 CORTEZ\\app\\src\\main\\res\\layout\\dateselect.xml"
+    }
+]
