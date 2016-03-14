@@ -68,7 +68,7 @@ public final class R {
         public static final int toggleButtonEdit=0x7f09000f;
         public static final int toolbar=0x7f09000e;
         public static final int txtChore=0x7f09001a;
-        public static final int txtChoreName=0x7f09001f;
+        public static final int txtContactName =0x7f09001f;
         public static final int txtDuration=0x7f09001c;
         public static final int txtFreq=0x7f09001b;
         public static final int txtName=0x7f090012;

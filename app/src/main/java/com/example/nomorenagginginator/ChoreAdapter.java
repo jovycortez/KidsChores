@@ -33,7 +33,7 @@ public class ChoreAdapter extends ArrayAdapter<Chores> {
             		v = vi.inflate(R.layout.chore_list_item, null);
             }
 
-            TextView txtchore = (TextView) v.findViewById(R.id.txtChoreName);
+            TextView txtchore = (TextView) v.findViewById(R.id.txtContactName);
             TextView frequency = (TextView) v.findViewById(R.id.txtFreq);
         	Button b = (Button) v.findViewById(R.id.buttonDeleteChore);
             	

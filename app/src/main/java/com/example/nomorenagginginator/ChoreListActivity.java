@@ -24,7 +24,7 @@ public class ChoreListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.chore_list);
 
-
+		initChildActivity();
 		initSettingsButton();
 		initDeleteButton();
 		initAddChoreButton();
@@ -76,11 +76,7 @@ public class ChoreListActivity extends ListActivity {
 			startActivity(intent);
 		}
 	}
-	private void initListChoreButton() {
-		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
-		list.setEnabled(false);
-	}
+
 	private void initAddChoreButton() {
 		Button newChore = (Button) findViewById(R.id.btnAddChore);
 		newChore.setOnClickListener(new OnClickListener() {
@@ -111,7 +107,11 @@ public class ChoreListActivity extends ListActivity {
 	}
 
 
-
+	private void initListChoreButton() {
+		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
+		list.setEnabled(false);
+	}
 
 	private void initChildActivity() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);

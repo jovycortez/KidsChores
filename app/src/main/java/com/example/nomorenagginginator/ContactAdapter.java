@@ -33,7 +33,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
             		v = vi.inflate(R.layout.child_list_item, null);
             }
 
-            TextView contactName = (TextView) v.findViewById(R.id.txtChoreName);
+            TextView contactName = (TextView) v.findViewById(R.id.txtContactName);
             TextView contactNumber = (TextView) v.findViewById(R.id.textPhoneNumber);
         	Button b = (Button) v.findViewById(R.id.buttonDeleteChild);
             	
