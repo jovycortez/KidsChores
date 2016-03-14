@@ -25,7 +25,7 @@ public class ChoreListActivity extends ListActivity {
 		setContentView(R.layout.chore_list);
 
 		initListButton();
-		//initChoreActivity();
+		initChoreActivity();
 		initSettingsButton();
 		initDeleteButton();
 		initAddChoreButton();
@@ -87,6 +87,15 @@ public class ChoreListActivity extends ListActivity {
 		});
 	}
 
+	private void initChoreActivity() {
+		ImageButton newChore = (ImageButton) findViewById(R.id.imageButtonMap);
+		newChore.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
+				startActivity(intent);
+			}
+		});
+	}
 	private void initDeleteButton() {
 		final Button deleteButton = (Button) findViewById(R.id.btnDelChore);
 		deleteButton.setOnClickListener(new OnClickListener() {
