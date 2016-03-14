@@ -25,11 +25,10 @@ public class ContactListActivity extends ListActivity {
 		setContentView(R.layout.child_list);
 
 		initListButton();
-		initChoreActivity();
 		initSettingsButton();
 		initDeleteButton();
 		initAddContactButton();
-		
+		initAddChoreActivity();
 	}
 
 	@Override
@@ -81,11 +80,11 @@ public class ContactListActivity extends ListActivity {
 	private void initAddContactButton() {
 		Button newContact = (Button) findViewById(R.id.buttonAdd);
 		newContact.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-    			Intent intent = new Intent(ContactListActivity.this, ChildActivity.class);
-    			startActivity(intent);
-            }
-        });
+			public void onClick(View v) {
+				Intent intent = new Intent(ContactListActivity.this, ChildActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	private void initDeleteButton() {
@@ -113,7 +112,7 @@ public class ContactListActivity extends ListActivity {
         list.setEnabled(false);
 	}
 
-	private void initChoreActivity() {
+	private void initAddChoreActivity() {
 		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninitChoreActivity");
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new View.OnClickListener() {

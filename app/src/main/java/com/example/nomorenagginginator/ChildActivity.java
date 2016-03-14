@@ -75,7 +75,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ChildActivity.this, ChoreActivity.class);
+    			Intent intent = new Intent(ChildActivity.this, ChoreListActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }

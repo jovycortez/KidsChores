@@ -35,7 +35,7 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
         setContentView(R.layout.add_chore);
 
         initListButton();
-		initChoreActivity();
+		initChoreButton();
         initSettingsButton();
         initToggleButton();
         initChangeDateButton();
@@ -73,7 +73,7 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 
-	private void initChoreActivity() {
+	private void initChoreButton() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {

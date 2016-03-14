@@ -24,11 +24,11 @@ public class ChoreListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.chore_list);
 
-		initListButton();
-		initChoreActivity();
+
 		initSettingsButton();
 		initDeleteButton();
 		initAddChoreButton();
+		initListChoreButton();
 	}
 
 	@Override
@@ -76,7 +76,11 @@ public class ChoreListActivity extends ListActivity {
 			startActivity(intent);
 		}
 	}
-
+	private void initListChoreButton() {
+		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
+		list.setEnabled(false);
+	}
 	private void initAddChoreButton() {
 		Button newChore = (Button) findViewById(R.id.btnAddChore);
 		newChore.setOnClickListener(new OnClickListener() {
@@ -86,16 +90,8 @@ public class ChoreListActivity extends ListActivity {
 			}
 		});
 	}
+//
 
-	private void initChoreActivity() {
-		ImageButton newChore = (ImageButton) findViewById(R.id.imageButtonMap);
-		newChore.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
-				startActivity(intent);
-			}
-		});
-	}
 	private void initDeleteButton() {
 		final Button deleteButton = (Button) findViewById(R.id.btnDelChore);
 		deleteButton.setOnClickListener(new OnClickListener() {
@@ -115,10 +111,7 @@ public class ChoreListActivity extends ListActivity {
 	}
 
 
-	private void initListButton() {
-        ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
-        list.setEnabled(false);
-	}
+
 
 	private void initChildActivity() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
