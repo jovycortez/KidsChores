@@ -35,7 +35,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
         setContentView(R.layout.add_child);
         
         initListButton();
-        initMapButton();
+		initChoreActivity();
         initSettingsButton();
         initToggleButton();
         initChangeDateButton();
@@ -71,11 +71,11 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
         });
 	}
 	
-	private void initMapButton() {
+	private void initChoreActivity() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ChildActivity.this, ContactMapActivity.class);
+    			Intent intent = new Intent(ChildActivity.this, ChoreActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }
@@ -135,7 +135,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 	private void initTextChangedEvents(){
-		final EditText contactName = (EditText) findViewById(R.id.txtChore);
+		final EditText contactName = (EditText) findViewById(R.id.txtName);
 		contactName.addTextChangedListener(new TextWatcher() {
 			public void afterTextChanged(Editable s) {
 				currentContact.setContactName(contactName.getText().toString());
@@ -185,9 +185,9 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
 	}
 	
 	private void setForEditing(boolean enabled) {
-		EditText editName = (EditText) findViewById(R.id.txtChore);
+		EditText editName = (EditText) findViewById(R.id.txtName);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
-		Button buttonChange = (Button) findViewById(R.id.btnBirthday);
+		Button buttonChange = (Button) findViewById(R.id.btnChangeDuration);
 
 		Button buttonSave = (Button) findViewById(R.id.buttonSave);
 		editName.setEnabled(enabled);
@@ -208,7 +208,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 	private void initChangeDateButton() {
-		Button changeDate = (Button) findViewById(R.id.btnBirthday);
+		Button changeDate = (Button) findViewById(R.id.btnChangeDuration);
 		changeDate.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -222,7 +222,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
 
 	private void hideKeyboard() {
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-		EditText editName = (EditText) findViewById(R.id.txtChore);
+		EditText editName = (EditText) findViewById(R.id.txtName);
 		imm.hideSoftInputFromWindow(editName.getWindowToken(), 0);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
 		imm.hideSoftInputFromWindow(editCell.getWindowToken(), 0);
@@ -238,7 +238,7 @@ public class ChildActivity extends FragmentActivity implements SaveDateListener 
 		currentContact = ds.getSpecificContact(id);
 		ds.close();
 		
-		EditText editName = (EditText) findViewById(R.id.txtChore);
+		EditText editName = (EditText) findViewById(R.id.txtName);
 		EditText editCell = (EditText) findViewById(R.id.editCell);
 		TextView birthDay = (TextView) findViewById(R.id.textBirthday);
 		

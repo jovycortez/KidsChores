@@ -25,7 +25,7 @@ import com.example.nomorenagginginator.DatePickerDialog.SaveDateListener;
 
 public class ChoreActivity extends FragmentActivity implements SaveDateListener {
 
-	private Contact currentContact;
+	private Chores currentChore;
 
 
     @Override
@@ -35,7 +35,7 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
         setContentView(R.layout.add_chore);
 
         initListButton();
-        initMapButton();
+		initChoreActivity();
         initSettingsButton();
         initToggleButton();
         initChangeDateButton();
@@ -44,10 +44,10 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 
 		Bundle extras = getIntent().getExtras();
         if(extras != null) {
-        	initContact(extras.getInt("choreId"));
+        	initChore(extras.getInt("choreId"));
         }
         else {
-        	currentContact = new Contact();
+			currentChore = new Chores();
         }
         setForEditing(false);
     }
@@ -56,26 +56,28 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.contact, menu);
+        getMenuInflater().inflate(R.menu.chore, menu);
         return true;
     }
+
 
 	private void initListButton() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
         list.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-    			Intent intent = new Intent(ChoreActivity.this, ContactListActivity.class);
-    			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    			startActivity(intent);
-            }
-        });
+			public void onClick(View v) {
+				Intent intent = new Intent(ChoreActivity.this, ContactListActivity.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+			}
+		});
 	}
 
-	private void initMapButton() {
+
+	private void initChoreActivity() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ChoreActivity.this, ContactMapActivity.class);
+    			Intent intent = new Intent(ChoreActivity.this, ChoreListActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }
@@ -105,23 +107,23 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 	private void initSaveButton() {
-		Button saveButton = (Button) findViewById(R.id.buttonSave);
+		Button saveButton = (Button) findViewById(R.id.btnSaveChore);
 		saveButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				hideKeyboard();
-				ContactDataSource ds = new ContactDataSource(ChoreActivity.this);
+				ChoreDataSource ds = new ChoreDataSource(ChoreActivity.this);
 				ds.open();
 				
 				boolean wasSuccessful = false;
-				if (currentContact.getContactID()==-1) {
-					wasSuccessful = ds.insertContact(currentContact);
-					int newId = ds.getLastContactId();
-					currentContact.setContactID(newId);
+				if (currentChore.getChoreID()==-1) {
+					wasSuccessful = ds.insertChore(currentChore);
+					int newId = ds.getLastChoreId();
+					currentChore.setChoreID(newId);
 				}
 				else {
-					wasSuccessful = ds.updateContact(currentContact);
+					wasSuccessful = ds.updateChore(currentChore);
 				}
 				ds.close();
 				
@@ -135,10 +137,10 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 	private void initTextChangedEvents(){
-		final EditText contactName = (EditText) findViewById(R.id.txtChore);
-		contactName.addTextChangedListener(new TextWatcher() {
+		final EditText choreName = (EditText) findViewById(R.id.txtChore);
+		choreName.addTextChangedListener(new TextWatcher() {
 			public void afterTextChanged(Editable s) {
-				currentContact.setContactName(contactName.getText().toString());
+				currentChore.setChore(choreName.getText().toString());
 			}
 			public void beforeTextChanged(CharSequence arg0, int arg1,
 					int arg2, int arg3) {
@@ -152,17 +154,10 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 		});
 
 
-
-
-
-
-
-
-
-		final EditText cellNumber = (EditText) findViewById(R.id.editCell);
-		cellNumber.addTextChangedListener(new TextWatcher() {
+		final EditText frequency = (EditText) findViewById(R.id.txtFreq);
+		frequency.addTextChangedListener(new TextWatcher() {
 			public void afterTextChanged(Editable s) {
-				currentContact.setCellNumber(cellNumber.getText().toString());
+				currentChore.setFrequency(frequency.getText().toString());
 			}
 
 			@Override
@@ -181,23 +176,23 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 		});
 
 
-		cellNumber.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
+		frequency.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
 	}
 	
 	private void setForEditing(boolean enabled) {
-		EditText editName = (EditText) findViewById(R.id.txtChore);
-		EditText editCell = (EditText) findViewById(R.id.editCell);
-		Button buttonChange = (Button) findViewById(R.id.btnBirthday);
+		EditText NameChore = (EditText) findViewById(R.id.txtChore);
+		EditText editFrequency = (EditText) findViewById(R.id.txtFreq);
+		Button buttonChange = (Button) findViewById(R.id.btnChangeDuration);
 
-		Button buttonSave = (Button) findViewById(R.id.buttonSave);
-		editName.setEnabled(enabled);
-		editCell.setEnabled(enabled);
+		Button buttonSave = (Button) findViewById(R.id.btnSaveChore);
+		NameChore.setEnabled(enabled);
+		editFrequency.setEnabled(enabled);
 
 		buttonChange.setEnabled(enabled);
 		buttonSave.setEnabled(enabled);
 		
 		if (enabled) {
-			editName.requestFocus();
+			NameChore.requestFocus();
 		}
 		else {
 			ScrollView s = (ScrollView) findViewById(R.id.scrollView1);
@@ -208,7 +203,7 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 	}
 
 	private void initChangeDateButton() {
-		Button changeDate = (Button) findViewById(R.id.btnBirthday);
+		Button changeDate = (Button) findViewById(R.id.btnChangeDuration);
 		changeDate.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -224,34 +219,34 @@ public class ChoreActivity extends FragmentActivity implements SaveDateListener 
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 		EditText editName = (EditText) findViewById(R.id.txtChore);
 		imm.hideSoftInputFromWindow(editName.getWindowToken(), 0);
-		EditText editCell = (EditText) findViewById(R.id.editCell);
+		EditText editCell = (EditText) findViewById(R.id.txtFreq);
 		imm.hideSoftInputFromWindow(editCell.getWindowToken(), 0);
 
 	}
 
 
-	private void initContact(int id) {
+	private void initChore(int id) {
 
-		ContactDataSource ds = new ContactDataSource(ChoreActivity.this);
+		ChoreDataSource ds = new ChoreDataSource(ChoreActivity.this);
 
 		ds.open();
-		currentContact = ds.getSpecificContact(id);
+		currentChore = ds.getSpecificChore(id);
 		ds.close();
 		
-		EditText editName = (EditText) findViewById(R.id.txtChore);
-		EditText editCell = (EditText) findViewById(R.id.editCell);
-		TextView birthDay = (TextView) findViewById(R.id.textBirthday);
-		
-		editName.setText(currentContact.getContactName());
-		editCell.setText(currentContact.getCellNumber());
-		birthDay.setText(DateFormat.format("MM/dd/yyyy", currentContact.getBirthday().toMillis(false)).toString());		
+		EditText Chore = (EditText) findViewById(R.id.txtChore);
+		EditText Frequency = (EditText) findViewById(R.id.txtFreq);
+		TextView Duration = (TextView) findViewById(R.id.txtDuration);
+
+		Chore.setText(currentChore.getChore());
+		Frequency.setText(currentChore.getFrequency());
+		Duration.setText(DateFormat.format("MM/dd/yyyy", currentChore.getDuration().toMillis(false)).toString());
 	}
 
 
 	@Override
 	public void didFinishDatePickerDialog(Time selectedTime) {
-		TextView birthDay = (TextView) findViewById(R.id.textBirthday);
-		birthDay.setText(DateFormat.format("MM/dd/yyyy", selectedTime.toMillis(false)).toString());		
+		TextView Duration = (TextView) findViewById(R.id.txtDuration);
+		Duration.setText(DateFormat.format("MM/dd/yyyy", selectedTime.toMillis(false)).toString());
 	}
     
 }

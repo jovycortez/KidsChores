@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".ChildActivity" >
     
-                <LinearLayout
+    <LinearLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:layout_width="0px"
@@ -86,7 +86,7 @@
 
 
             <EditText
-                android:id="@+id/txtChore"
+                android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -115,8 +115,8 @@
         android:layout_marginTop="43dp"
         android:layout_alignTop="@+id/scrollView1"
         android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_toLeftOf="@+id/btnBirthday"
-        android:layout_toStartOf="@+id/btnBirthday">
+        android:layout_toLeftOf="@+id/btnChangeDuration"
+        android:layout_toStartOf="@+id/btnChangeDuration">
 
     </EditText>
 
@@ -148,7 +148,7 @@
         android:layout_marginStart="56dp" />
 
     <Button
-       android:id="@+id/btnBirthday"
+       android:id="@+id/btnChangeDuration"
        style="?android:attr/buttonStyleSmall"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"

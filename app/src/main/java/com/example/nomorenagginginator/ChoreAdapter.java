@@ -30,11 +30,11 @@ public class ChoreAdapter extends ArrayAdapter<Chores> {
             
             if (v == null) {
             		LayoutInflater vi = (LayoutInflater) adapterContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            		v = vi.inflate(R.layout.chore_list, null);
+            		v = vi.inflate(R.layout.chore_list_item, null);
             }
 
-            TextView txtchore = (TextView) v.findViewById(R.id.txtChore);
-            TextView frequency = (TextView) v.findViewById(R.id.txtFrequency);
+            TextView txtchore = (TextView) v.findViewById(R.id.txtChoreName);
+            TextView frequency = (TextView) v.findViewById(R.id.txtFreq);
         	Button b = (Button) v.findViewById(R.id.buttonDeleteChore);
             	
         	txtchore.setText(chore.getChore());

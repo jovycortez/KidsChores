@@ -23,9 +23,9 @@ public class ContactListActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.child_list);
-		
+
 		initListButton();
-		initMapButton();
+		initChoreActivity();
 		initSettingsButton();
 		initDeleteButton();
 		initAddContactButton();
@@ -89,7 +89,7 @@ public class ContactListActivity extends ListActivity {
 	}
 
 	private void initDeleteButton() {
-		final Button deleteButton = (Button) findViewById(R.id.buttonDelete);
+		final Button deleteButton = (Button) findViewById(R.id.btnDeleteChild);
 		deleteButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
 				if (isDeleting) {
@@ -108,15 +108,17 @@ public class ContactListActivity extends ListActivity {
 
 	
 	private void initListButton() {
+		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
         list.setEnabled(false);
 	}
-	
-	private void initMapButton() {
+
+	private void initChoreActivity() {
+		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ninitChoreActivity");
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
         list.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-    			Intent intent = new Intent(ContactListActivity.this, ContactMapActivity.class);
+    			Intent intent = new Intent(ContactListActivity.this, ChoreActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     			startActivity(intent);
             }

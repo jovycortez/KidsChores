@@ -33,9 +33,9 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
             		v = vi.inflate(R.layout.child_list_item, null);
             }
 
-            TextView contactName = (TextView) v.findViewById(R.id.textContactName);
+            TextView contactName = (TextView) v.findViewById(R.id.txtChoreName);
             TextView contactNumber = (TextView) v.findViewById(R.id.textPhoneNumber);
-        	Button b = (Button) v.findViewById(R.id.buttonDeleteContact);
+        	Button b = (Button) v.findViewById(R.id.buttonDeleteChild);
             	
         	contactName.setText(contact.getContactName());
 
@@ -50,7 +50,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
     
     public void showDelete(final int position, final View convertView, final Context context, final Contact contact) {
     	View v = convertView;
-    	final Button b = (Button) v.findViewById(R.id.buttonDeleteContact);
+    	final Button b = (Button) v.findViewById(R.id.buttonDeleteChild);
 
     	if (b.getVisibility()==View.INVISIBLE) {
     		b.setVisibility(View.VISIBLE);
@@ -79,7 +79,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
  
 	private void hideDelete(int position, View convertView, Context context) {
       View v = convertView;
-      final Button b = (Button) v.findViewById(R.id.buttonDeleteContact);
+      final Button b = (Button) v.findViewById(R.id.buttonDeleteChild);
 	  b.setVisibility(View.INVISIBLE);
 	  b.setOnClickListener(null);
  }

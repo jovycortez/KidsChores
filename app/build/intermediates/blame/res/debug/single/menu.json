@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\menu\\contact_settings.xml"
     },
     {
+        "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\menu\\chore.xml",
+        "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\menu\\chore.xml"
+    },
+    {
         "merged": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\build\\intermediates\\res\\merged\\debug\\menu\\contact.xml",
         "source": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\menu\\contact.xml"
     },

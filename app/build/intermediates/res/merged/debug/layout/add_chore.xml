@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChildActivity" >
+    tools:context=".ChoreActivity" >
     
-                <LinearLayout
+    <LinearLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:layout_width="0px"
             android:layout_height="0px"
-                    android:id="@+id/linearLayout" />
+            android:id="@+id/linearLayout" />
 
     
 
@@ -64,7 +64,7 @@
             android:text="ToggleButton" />
 
         <Button
-            android:id="@+id/buttonSave"
+            android:id="@+id/btnSaveChore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -95,22 +95,21 @@
                 android:imeOptions="actionNext"
                 android:inputType="textCapWords"
                 android:hint="Chore"
-                android:layout_alignRight="@+id/txtFrequency"
-                android:layout_alignEnd="@+id/txtFrequency">
+                android:layout_alignRight="@+id/txtFreq"
+                android:layout_alignEnd="@+id/txtFreq">
 
             </EditText>
 
             <EditText
-                android:id="@+id/txtFrequency"
-                android:layout_width="wrap_content"
+                android:id="@+id/txtFreq"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:maxLength="14"
                 android:ems="7"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editEMail"
                 android:inputType="textCapWords"
-               android:layout_alignParentStart="true"
+
                android:hint="Daily, weekly or Monthly"
                 android:layout_below="@id/txtChore"
                 android:layout_alignParentRight="true"
@@ -137,7 +136,7 @@
         android:layout_marginStart="23dp" />
 
     <TextView
-        android:id="@+id/textBirthday"
+        android:id="@+id/txtDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="47dp"
@@ -151,16 +150,16 @@
         android:layout_marginStart="47dp" />
 
     <Button
-       android:id="@+id/btnBirthday"
+       android:id="@+id/btnChangeDuration"
        style="?android:attr/buttonStyleSmall"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
         android:text="Change"
-        android:layout_alignBottom="@+id/textBirthday"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignBottom="@+id/txtDuration"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp" />
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

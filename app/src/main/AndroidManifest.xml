@@ -11,11 +11,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/appicon"
-        android:label="@string/app_name"
+        android:label="@string/kids_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.nomorenagginginator.ContactListActivity"
-            android:label="@string/title_activity_contact_list" >
+            android:label="@string/kids_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +24,17 @@
         </activity>
         <activity
             android:name=".ChildActivity"
-            android:label="@string/app_name" >
+            android:label="@string/kids_name" >
         </activity>
         <activity
-            android:name="com.example.nomorenagginginator.ContactMapActivity"
-            android:label="@string/title_activity_contact_map" >
+            android:name=".ChoreActivity"
+            android:label="@string/chore_name" >
         </activity>
+        <activity
+            android:name=".ChoreListActivity"
+            android:label="@string/chore_name" >
+        </activity>
+
         <activity
             android:name="com.example.nomorenagginginator.ContactSettingsActivity"
             android:label="@string/title_activity_contact_settings" >

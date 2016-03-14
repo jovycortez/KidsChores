@@ -148,9 +148,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 156,
+                        "startOffset": 150,
                         "endColumn": 52,
-                        "endOffset": 204
+                        "endOffset": 198
                     }
                 }
             },
@@ -159,17 +159,17 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 465,
-                    "endColumn": 48,
-                    "endOffset": 509
+                    "endColumn": 45,
+                    "endOffset": 506
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 59,
-                        "endColumn": 48,
-                        "endOffset": 103
+                        "startOffset": 103,
+                        "endColumn": 45,
+                        "endOffset": 144
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 514,
-                    "endColumn": 45,
-                    "endOffset": 555
+                    "startOffset": 511,
+                    "endColumn": 42,
+                    "endOffset": 549
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 109,
-                        "endColumn": 45,
-                        "endOffset": 150
+                        "startOffset": 59,
+                        "endColumn": 42,
+                        "endOffset": 97
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 560,
-                    "endColumn": 52,
-                    "endOffset": 608
+                    "startOffset": 554,
+                    "endColumn": 68,
+                    "endOffset": 618
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 210,
-                        "endColumn": 52,
-                        "endOffset": 258
+                        "startOffset": 204,
+                        "endColumn": 68,
+                        "endOffset": 268
                     }
                 }
             },
@@ -215,67 +215,10 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 613,
-                    "endColumn": 68,
-                    "endOffset": 677
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 264,
-                        "endColumn": 68,
-                        "endOffset": 328
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 682,
-                    "endColumn": 67,
-                    "endOffset": 745
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 334,
-                        "endColumn": 67,
-                        "endOffset": 397
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 750,
-                    "endColumn": 68,
-                    "endOffset": 814
-                },
-                "from": {
-                    "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 403,
-                        "endColumn": 68,
-                        "endOffset": 467
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 819,
-                    "endLine": 22,
+                    "startOffset": 623,
+                    "endLine": 19,
                     "endColumn": 12,
-                    "endOffset": 1105
+                    "endOffset": 909
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\styles.xml",
@@ -291,12 +234,12 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1110,
-                    "endLine": 25,
+                    "startOffset": 914,
+                    "endLine": 22,
                     "endColumn": 12,
-                    "endOffset": 1265
+                    "endOffset": 1069
                 },
                 "from": {
                     "file": "C:\\Users\\Jovy\\Documents\\GitHub\\KidsChores\\app\\src\\main\\res\\values\\styles.xml",

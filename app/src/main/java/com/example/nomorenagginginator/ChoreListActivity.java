@@ -25,7 +25,7 @@ public class ChoreListActivity extends ListActivity {
 		setContentView(R.layout.chore_list);
 
 		initListButton();
-		initMapButton();
+		//initChoreActivity();
 		initSettingsButton();
 		initDeleteButton();
 		initAddChoreButton();
@@ -34,7 +34,7 @@ public class ChoreListActivity extends ListActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.chore_list, menu);
+		getMenuInflater().inflate(R.menu.chore, menu);
 		return true;
 	}
 
@@ -64,7 +64,7 @@ public class ChoreListActivity extends ListActivity {
 						adapter.showDelete(position, itemClicked, ChoreListActivity.this, selectedChores);
 					}
 					else {
-						Intent intent = new Intent(ChoreListActivity.this, ChildActivity.class);
+						Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
 						intent.putExtra("choreId", selectedChores.getChoreID());
 						startActivity(intent);
 					}
@@ -72,13 +72,13 @@ public class ChoreListActivity extends ListActivity {
 			});
 		}
 		else {
-			Intent intent = new Intent(ChoreListActivity.this, ChildActivity.class);
+			Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
 			startActivity(intent);
 		}
 	}
 
 	private void initAddChoreButton() {
-		Button newChore = (Button) findViewById(R.id.buttonAdd);
+		Button newChore = (Button) findViewById(R.id.btnAddChore);
 		newChore.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(ChoreListActivity.this, ChoreActivity.class);
@@ -88,7 +88,7 @@ public class ChoreListActivity extends ListActivity {
 	}
 
 	private void initDeleteButton() {
-		final Button deleteButton = (Button) findViewById(R.id.buttonDelete);
+		final Button deleteButton = (Button) findViewById(R.id.btnDelChore);
 		deleteButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
 				if (isDeleting) {
@@ -111,15 +111,15 @@ public class ChoreListActivity extends ListActivity {
         list.setEnabled(false);
 	}
 
-	private void initMapButton() {
-        ImageButton list = (ImageButton) findViewById(R.id.imageButtonMap);
+	private void initChildActivity() {
+        ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
         list.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-    			Intent intent = new Intent(ChoreListActivity.this, ContactMapActivity.class);
-    			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    			startActivity(intent);
-            }
-        });
+			public void onClick(View v) {
+				Intent intent = new Intent(ChoreListActivity.this, ChildActivity.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+			}
+		});
 	}
 	private void initSettingsButton() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonSettings);

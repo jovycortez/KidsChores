@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout tools:context=".ContactListActivity" 
+<RelativeLayout tools:context=".ChoreListActivity"
     android:layout_height="match_parent" 
     android:layout_width="match_parent" 
     xmlns:tools="http://schemas.android.com/tools" 
@@ -15,14 +15,14 @@
         <Button android:layout_height="wrap_content" 
             android:layout_width="wrap_content" 
             android:layout_alignParentLeft="true" 
-            android:id="@+id/buttonDelete" 
+            android:id="@+id/btnDelChore"
             android:text="Delete" 
             android:layout_marginLeft="20dp"/>
         
         <Button android:layout_height="wrap_content" 
             android:layout_width="wrap_content"
-            android:id="@+id/buttonAdd" 
-            android:text="Add Contact" 
+            android:id="@+id/btnAddChore"
+            android:text="Add Chore"
             android:layout_marginRight="20dp" 
             android:layout_alignParentRight="true"/>
     
